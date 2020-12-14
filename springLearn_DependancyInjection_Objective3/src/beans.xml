@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	           
+	           <!-- objective injection -->
+	           <bean id="theClassRef"  class="springLearn_DependancyInjection_Objective3.MathCheat"></bean>
+<bean id="stu" class="springLearn_DependancyInjection_Objective3.Student">
+<property name="id" value="1001"></property>
+<property name="x" ref="theClassRef"/>
+
+</bean>	
+<bean id="anotherName" class="springLearn_DependancyInjection_Objective3.AnotherStudent">
+<property name="cheat" ref="theClassRef"/>
+
+</bean>
+	</beans>

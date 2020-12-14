@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config/>
+	<context:property-placeholder location="classpath:StudentInfo.properties"/> <!-- this one for getting the valuses form the studentInfo.properties file -->
+                    
+          <bean id="student" class="InjectingLiteralValues.Student">
+          
+         <!-- <property name="name" value="${student.name}"></property>
+          <property name="IntrestedCourse" value="${student.IntrestedCourse}"></property>
+          <property name="hoppy" value="${student.hoppy}"></property>
+          
+          we wil use anotation instead. @value. from the file directly to the values -->
+          
+          
+          </bean>
+ 
+
+
+</beans>

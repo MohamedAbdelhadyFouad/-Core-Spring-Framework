@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context
+               http://www.springframework.org/schema/context/spring-context.xsd">
+           
+           <!-- set the id name with the name  of the variable, in case of you are using autowiering = "byaname"
+           ** autowire="bytype" it does not matter with he id name 
+            -->          
+           <bean id="heart" class="autowired_qualifier.Heart"></bean>
+      <bean id="human"  class="autowired_qualifier.Human" autowire="byName">
+     
+     <!--  <property name="heart" ref="heartRef"> </property> 
+     
+     ** we are d going to replace this  like with auto wired above 
+     -->
+      
+      </bean>
+ 
+
+
+</beans>

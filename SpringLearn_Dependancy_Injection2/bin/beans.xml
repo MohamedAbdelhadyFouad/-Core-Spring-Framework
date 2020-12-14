@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	           
+	           <!-- this called Injection by sitter function, make opbject 1 -->
+	           
+	<!-- <bean id="student" class = "indpendancyInjection.Student">
+	<property name="studentName" value="Mohamed Abdelhady"></property>  
+		<property name="ID" value="60"></property>
+	
+	</bean> 	-->
+	<!-- This bean tag, Ioc containter manage. it mean here Ioc container 
+	make an opject from Student class, called "student" and set the values of this object-->
+	
+	<!-- this called Injection, make object 2-->
+	
+	<!-- <bean id="student1" class = "indpendancyInjection.Student">
+	
+	<property name="studentName" value="Ahmed Abdelhady"></property>  
+		<property name="ID" value="70"></property>
+	
+	</bean>-->
+	<!-- here we are goig to learn injection by constractor 
+	** <constructor-arg name="studentName" value="Ahmed Abdelhady"></constructor-arg>
+	
+	** Just convert property tag to property-arg.
+	
+	-->
+	<bean id="student1" class = "indpendancyInjection.Student">
+	
+	<constructor-arg name="studentName" value="Ahmed Abdelhady"/>  
+		<constructor-arg name="ID" value="70" />
+	
+	</bean>
+	
+	
+	
+	
+	</beans>
